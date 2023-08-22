@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card-container {
+        width: 100%;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+
+      .card-content {
+        width: 100%;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+      .card-content-red {
+        background-color: red;
+      }
+
+      .card-content-blue {
+        background-color: blue;
+      }
+
+      .card-content-purple {
+        background-color: purple;
+      }
+
+      .card-content-green {
+        background-color: green;
+      }
+
+      .card-content-yellow {
+        background-color: yellow;
+      }
+
+      .card-content-orange {
+        background-color: orange;
+      }
+
+      @media (min-width: 600px) {
+        .card-container {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (min-width: 900px) {
+        .card-container {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hellow FSW 2</h1>
+    <div class="card-container">
+      <div class="card-content card-content-blue">
+        <h1>hello cuy</h1>
+      </div>
+      <div class="card-content card-content-green">
+        <h1>hello cuy</h1>
+      </div>
+      <div class="card-content card-content-orange">
+        <h1>hello cuy</h1>
+      </div>
+      <div class="card-content card-content-purple">
+        <h1>hello cuy</h1>
+      </div>
+      <div class="card-content card-content-red">
+        <h1>hello cuy</h1>
+      </div>
+      <div class="card-content card-content-yellow">
+        <h1>hello cuy</h1>
+      </div>
+    </div>
+  </body>
+</html>
